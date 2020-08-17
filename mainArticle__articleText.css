@@ -1,0 +1,63 @@
+  .mainArticle__articleText {
+    width: 59.8em;
+   display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-area: content; 
+    margin-left: 3em;
+    font-size: .7em;
+    
+
+}
+
+.mainArticle__articleText {
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.articleText__text {
+    
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-left: 3.4em;
+    color: hsl(0, 0%, 20%);
+    font-size: 1.5em;
+}
+
+.articleText__socialMedia {
+    grid-column-start: 4;
+    grid-column-end: 5;
+} 
+
+ .articleText__authorInfo {
+    font-size: .7em;
+    margin-left: 3em;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas: "img name name . ."
+						 "img emailPic email twitterpic twitter "
+						 "photographer photographer photographer . ."
+						 "photeremailIcon photeremailIcon . . .";
+}
+
+.authorInfo__image {
+    border-radius: 50%;
+    grid-area: img;
+}
+
+.authorInfo__Name {
+    grid-area: name;
+}
+
+.authorInfo__emailIcon {
+    grid-area: email;
+}
+
+.photographer__name {
+    grid-area: photographer;
+}
+
+.photographer__emailIcon {
+    grid-area: photeremailIcon;
+}

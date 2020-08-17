@@ -1,12 +1,19 @@
 @import './article-header.css';
 @import './article-figure.css';
+@import './article-footer.css';
+@import './mainArticle__articleText.css';
 
 .mainArticle {
+	width: 65em;
+	margin: 0 auto;
+	border-left: solid rgb(223, 221, 221) 1px;
 	display: grid;
+	border-right: solid rgb(223, 221, 221) 1px;
+
 	grid-template-rows: repeat(4, auto);
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas: ". teaser teaser teaser"
-											 "cover cover cover cover"
-											 "newssection colophon colophon commentcount"
-											 "byline content content content";
+						 "cover cover cover cover"
+						 "colophon colophon colophon colophon"
+						 "content content content content";
 }
